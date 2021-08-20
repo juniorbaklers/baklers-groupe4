@@ -1,0 +1,250 @@
+/*COLLER UN LIEN DE FONT FAMILY A PRENDRE SUR GOOGLE*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: #444;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffff;
+}
+
+.bold{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.semi_bold{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.junior{
+    width: 600px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.junior .junior_gauche{
+    width: 7000px;
+    background: linear-gradient(180deg, #7a6a10, #ffdb12);
+}
+
+h1{
+    font-size: 18px;
+    color: rgb(143, 8, 30);
+   margin: 15px;
+}
+
+.junior .junior_gauche .junior_profile{
+    width: 100%;
+    height: 300px;
+}
+
+.junior .junior_gauche .junior_profile img{
+    width: 180px;
+     border-radius: 100%;
+     margin-top: 30px;
+     margin-left: 50px;
+     border: 4px solid #fff;
+     height: 180px;
+     margin-left: 20px;
+}
+
+.junior .junior_gauche .junior_contenu{
+    padding: 0 25px;
+    padding-top: 40px;
+}
+.junior .titre{
+    margin: 20px 0px;
+}
+
+.junior .bold{
+    color: rgb(143, 8, 30)
+}
+
+.junior .semi_bold{
+    color: rgb(143, 8, 30);
+    opacity: 0,6;
+}
+
+.junior .junior_arcticle{
+    padding: 20px 0px;
+    border-bottom: 2px solid rgb(253, 251, 251);
+    display: flex;
+}
+
+.junior .junior_arcticle:last-child{
+    border-bottom: 0px;
+}
+
+.junior .junior_gauche ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+.junior .junior_gauche:last-child{
+    margin-bottom: 0;
+}
+
+.junior .junior_gauche ul li .icon{
+    width: 35px;
+    height: 35px;
+    color: rgb(143, 8, 30);
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 16px;
+    position: relative;
+}
+
+.junior .junior_droit .junior_loisir ul li i,
+.junior .icon i{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    transform: translate(-50%, -50%);
+}
+
+.junior .junior_gauche .junior_competence ul li{
+    justify-content: space-between;
+    margin-block-end: -2%;
+    margin-inline-end: 10%;
+    max-width: 50%;
+}
+
+.junior .junior_gauche .junior_competence .competence_progress span{
+    content: "";
+    background: #fff;
+    height: 20px;
+
+}
+
+.junior .junior_gauche .junior_competence ul li .nom_competence{
+    width: 70%;
+    margin: 0  2%;
+}
+
+.junior .junior_gauche .junior_competence ul li .competence_progress{
+    width: 70%;
+    margin: 0 5px;
+    height: 5px;
+    background: #fff;
+    position: relative;
+    left: -15%;
+}
+
+.junior .junior_gauche .junior_competence ul li .competence_progress span{
+    position: absolute;
+    top: 0;
+    left: 70;
+    background: rgba(2,100,100);
+    opacity: 0.7;
+    height: 100%;
+}
+
+.junior .junior_gauche .junior_competence ul li .ompetence_pourcentage{
+    width: 15%;
+    left: 80%;
+}
+.junior .junior_droit{
+    width: 7000px;
+    background: rgba(2,100,100);
+    border-start-start-radius: 100px;
+    border-end-start-radius: 100px;
+    color: rgb(233, 214, 214);
+    margin-left: -100px;
+    padding: 25px;
+}
+
+.junior .junior_droit .bold{
+color: #ffdb12;
+}
+
+.junior .junior_droit .junior_travail ul,
+.junior .junior_droit .junior_ETUDE ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.junior .junior_droit ul li{
+    position: relative;
+}
+
+.junior .junior_droit ul li .date{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.junior .junior_droit ul li .info{
+    margin-bottom: 15px;
+}
+
+.junior .junior_droit ul li:last-child .info{
+    margin-bottom: 0;
+}
+
+.junior .junior_droit .junior_travail ul li::before,
+.junior .junior_droit .junior_ETUDE ul li::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 3px solid #ffdb12;
+}
+
+.junior .junior_droit .junior_travail ul li::after,
+.junior .junior_droit .junior_ETUDE ul li::after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 3px;
+    height: 133px;
+    background: #ffdb12;
+}
+
+.junior .junior_droit .junior_loisir ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.junior .junior_droit .junior_loisir ul li{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffdb12;
+    border-radius: 50%;
+    background: rgb(5, 5, 5);
+    color: #ffdb12;
+}
+
+.junior .junior_droit .junior_loisir ul li i{
+    font-size: 15px;
+}
+
+.junior .junior_droit .junior_loisir ul li::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -65px;
+    width: 65px;
+    height: 2px;
+    background: #ffdb12;
+
+}
+.junior .junior_droit .junior_loisir ul li:last-child::before{
+    visibility: hidden;
+}
